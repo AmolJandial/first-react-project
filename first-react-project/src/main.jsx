@@ -1,8 +1,6 @@
 import { createRoot } from "react-dom/client";
-import MainContent from "./main_content";
+import Page from "./list_component";
 
-createRoot(document.querySelector("#root")).render(
-  <div>
-    <MainContent />
-  </div>
-);
+const root = createRoot(document.querySelector("#root"));
+
+root.render(<Page />);
